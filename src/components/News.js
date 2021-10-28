@@ -37,20 +37,20 @@ const News=(props)=>{
   useEffect(()=>{
     document.title = `${capitalizeFirstletter(props.category)} - NewsMonkey`;
     updateNews();
-
+    // eslint-disable-next-line
   },[])
 
 
 
-  const handlePrevClick = async () => {
-    setPage(page-1);
-    updateNews();
-  };
-  const handleNextClick = async () => {
+  // const handlePrevClick = async () => {
+  //   setPage(page-1);
+  //   updateNews();
+  // };
+  // const handleNextClick = async () => {
    
-    setPage(page+1);
-    updateNews();
-  };
+  //   setPage(page+1);
+  //   updateNews();
+  // };
 
   const fetchMoreData = async() => {
   
